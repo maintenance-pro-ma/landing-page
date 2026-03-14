@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance Pro Maroc | Expert en Maintenance Industrielle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #1e3a8a;
+            --accent-yellow: #facc15;
+            --dark-grey: #333;
+            --light-grey: #f4f4f4;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--dark-grey);
+            background-color: var(--white);
+        }
+
+        /* Hero Section */
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1500') no-repeat center center/cover;
+            height: 100vh;
+            color: var(--white);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin-bottom: 2rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn-urgent { background-color: #25d366; color: white; } /* WhatsApp Green */
+        .btn-quote { background-color: var(--primary-blue); color: white; }
+        .btn:hover { opacity: 0.9; transform: translateY(-3px); }
+
+        /* Services Section */
+        .services {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--light-grey);
+            padding: 30px;
+            border-radius: 10px;
+            border-bottom: 5px solid var(--primary-blue);
+            transition: 0.3s;
+        }
+
+        .card:hover { transform: translateY(-10px); }
+
+        .card i {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+        }
+
+        .card h3 { margin-bottom: 15px; }
+
+        .card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .card ul li::before {
+            content: "✔";
+            color: var(--primary-blue);
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        /* Form Section */
+        .contact-section {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 80px 20px;
+        }
+
+        .contact-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            color: var(--dark-grey);
+        }
+
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: var(--primary-blue);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #222;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            .contact-container { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Maintenance Pro Maroc</h1>
+        <p>Expertise en maintenance industrielle : Électricité, Automatisme, Hydraulique & Mécanique. Nous garantissons la disponibilité de vos équipements 24h/24.</p>
+        <div class="cta-buttons">
+            <a href="https://wa.me/VOTRE_NUMERO" class="btn btn-urgent"><i class="fab fa-whatsapp"></i> INTERVENTION URGENTE</a>
+            <a href="#contact" class="btn btn-quote">DEVIS GRATUIT</a>
+        </div>
+    </header>
+
+    <section class="services">
+        <div class="section-title">
+            <h2>Nos Services Experts</h2>
+            <p>Une solution globale pour vos systèmes industriels critiques.</p>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-bolt"></i>
+                <h3>Électricité & Automatisme</h3>
+                <ul>
+                    <li>Dépannage Armoires & PLC</li>
+                    <li>Paramétrage Variateurs</li>
+                    <li>Programmation Siemens/Schneider</li>
+                </ul>
+            </div>
+            <div class="card">
+                <i class="fas fa-cogs"></i>
+                <h3>Mécanique & Hydraulique</h3>
+                <ul>
+                    <li>Réparation Vérins & Pompes</li>
+                    <li>Maintenance Préventive</li>
+                    <li>Révision de lignes de production</li>
+                </ul>
+            </div>
+            <div class="card">
+                <i class="fas fa-tools"></i>
+                <h3>Optimisation & Câblage</h3>
+                <ul>
+                    <li>Mise aux normes électriques</li>
+                    <li>Installation de nouvelles machines</li>
+                    <li>Câblage structuré & propre</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <h2 style="text-align: center; margin-bottom: 30px;">Demander une intervention</h2>
+            <form>
+                <div class="form-group">
+                    <label>Nom de l'entreprise</label>
+                    <input type="text" placeholder="Votre société" required>
+                </div>
+                <div class="form-group">
+                    <label>Type de besoin</label>
+                    <select>
+                        <option>Dépannage Urgent</option>
+                        <option>Maintenance Préventive</option>
+                        <option>Installation / Câblage</option>
+                        <option>Autre</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Téléphone</label>
+                    <input type="tel" placeholder="Ex: 06XXXXXXXX" required>
+                </div>
+                <div class="form-group">
+                    <label>Message / Description de la panne</label>
+                    <textarea rows="4" placeholder="Décrivez votre besoin..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">ENVOYER LA DEMANDE</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Maintenance Pro Maroc. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
